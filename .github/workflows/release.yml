@@ -72,7 +72,7 @@ jobs:
         with:
           arguments: publish -Pversion=${{ steps.release.outputs.tag_name }}
       - name: Publish Release Information to Discord Channel
-        uses: sarisia/actions-status-discord@v1.8.5
+        uses: sarisia/actions-status-discord@v1.8.6
         with:
           nodetail: true
           title: New version `${{ steps.release.outputs.tag_name }}` is ready!

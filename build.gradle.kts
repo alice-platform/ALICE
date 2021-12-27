@@ -5,7 +5,7 @@ plugins {
   id("org.jetbrains.dokka") version "1.4.32"
   id("com.coditory.manifest") version "0.1.14"
   id("io.gitlab.arturbosch.detekt") version "1.16.0"
-  id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
+  id("org.jlleitschuh.gradle.ktlint") version "10.2.1"
   id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 

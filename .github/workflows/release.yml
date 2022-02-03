@@ -39,7 +39,7 @@ jobs:
           java-version: ${{ matrix.jvm }}
           distribution: zulu
       - name: Final Test JDK${{ matrix.jvm }}
-        uses: eskatos/gradle-command-action@v2.1.2
+        uses: eskatos/gradle-command-action@v2.1.3
         with:
           arguments: check
   release:
@@ -68,7 +68,7 @@ jobs:
         uses: release-drafter/release-drafter@v5.15.0
         id: release
       - name: Release v${{ steps.release.outputs.tag_name }}
-        uses: eskatos/gradle-command-action@v2.1.2
+        uses: eskatos/gradle-command-action@v2.1.3
         with:
           arguments: publish -Pversion=${{ steps.release.outputs.tag_name }}
       - name: Publish Release Information to Discord Channel

@@ -48,6 +48,6 @@ jobs:
           java-version: ${{ matrix.jvm }}
           distribution: zulu
       - name: Test JDK${{ matrix.jvm }}
-        uses: eskatos/gradle-command-action@v2.1.2
+        uses: eskatos/gradle-command-action@v2.1.3
         with:
           arguments: test

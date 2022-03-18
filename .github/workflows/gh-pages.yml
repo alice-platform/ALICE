@@ -19,7 +19,7 @@ jobs:
           java-version: 8
           distribution: zulu
       - name: Deploy KDoc
-        uses: eskatos/gradle-command-action@v2.1.2
+        uses: eskatos/gradle-command-action@v2.1.4
         with:
           arguments: dokkaHtmlCollector
       - name: Deploy
